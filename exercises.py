@@ -39,11 +39,24 @@ elif download_speed > 100:
 
  #The function will return true if the password passed into the function is equal to 'qwerty'. Declare a variable named password_result and print your result.
 
+def check_password(password):
+    if(password == 'qwerty'):
+        return True
+
+password_result = check_password('qwerty')
+print(password_result)
+
 #5 Function check_login
 #Create a function named check_login which takes a parameter login.
 
 #The function will print 'Login Success' if the login passed into the function is equal to 'DevLeague' and print 'Re-enter Login' if it doesn't.
 
+def check_login(login):
+    if (login == 'DevLeague'):
+        print('login success')
+    else:
+        print('Re-enter Login')
+check_login('login')
 #6 Function malware_type
 #Create a function named malware_type which takes a parameter malware. 
 
@@ -51,6 +64,15 @@ elif download_speed > 100:
 #if malware is adware: 'Low Threat'
 #if malware is virus: 'Do not share files'
 #default message 'I hope you backed up your data'
+
+def malware_type(malware): 
+    if malware == 'adware':
+        print('Low Threat')
+    elif (malware == 'virus'):
+        print('do not share files')
+    else:
+        print('i hope you backed up your files')
+malware_type('virus') 
 
 #7 Function encryption
 #Create a function named encryption which takes a parameter keys.
