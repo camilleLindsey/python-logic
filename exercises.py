@@ -80,15 +80,22 @@ malware_type('virus')
 #The function will print 'Encryption Success' if the keys passed into function has 5 characters and print 'Encryption Fail' if it doesn't.
 def encryption(keys):
     if (len(keys) == 5):
-        print('encryption success')
+        print('Encryption Success')
     else:
-        print('encryption fail')
+        print('Encryption Fail')
 encryption('keys')
 
 #8 Function even_cryptography
 #Create a function named even_cryptography which takes a parameter num.
-def even_cryptography
+
 #The function will print 'Decryption Success' if the number passed into the function is even and print 'Decryption Fail' if it isn't.
+
+def even_cryptography(num):
+    if (num%2 == 0):
+        print ('Decryption Success')
+    else:
+        print('Decryption Fail')
+even_cryptography(7)
 
 #9 Function bandwidth
 #Declare a variable named mbps and assign it a list of 5 number values of your choosing. 
@@ -100,6 +107,15 @@ def even_cryptography
 #if sum <= 100: 'Moderate User'
 #if sum <=150: 'Multi Media User'
 #if sum >150: 'Power User'
+
+mbps=[1, 2, 3, 4, 1]
+
+def bandwidth(usage):
+    if(sum(usage) <= 50):
+        print('light user')
+    elif(sum(usage) <= 100):
+        print('moderate user')
+bandwidth(mbps)
 
 #10 Function ssh_keys
 #Create a function named ssh_keys which takes two parameters public and private.
