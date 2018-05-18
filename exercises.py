@@ -108,13 +108,13 @@ even_cryptography(7)
 #if sum <=150: 'Multi Media User'
 #if sum >150: 'Power User'
 
-mbps=[1, 2, 3, 4, 1]
+mbps=[1, 2, 3, 4, 50]
 
 def bandwidth(usage):
     if(sum(usage) <= 50):
-        print('light user')
+        print('Light user')
     elif(sum(usage) <= 100):
-        print('moderate user')
+        print('Moderate user')
 bandwidth(mbps)
 
 #10 Function ssh_keys
@@ -124,10 +124,26 @@ bandwidth(mbps)
 
 #Declare a variable named ssh_connection and print your result.
 
+def ssh_keys(public, private):
+    if(public != private):
+        return False
+    else:
+        return True 
+ssh_connection = ssh_keys(0, 1)
+print(ssh_connection)
+
+
 #11 Function largest_num
 #Create a function named largest_num which takes three parameters: num_1, num_2 and num_3.
 
 #The function will find the largest number among any three numbers that are passed into the function. Declare a variable named large_num_result and print your results.
+
+def largest_num(num_1, num_2, num_3):
+    if (max(largest_num)):
+
+
+large_num_result = largest_num(1, 2, 3)
+print(large_num_result)
 
 #12 Function pos_neg
 #Create a function named pos_neg which takes a parameter num.
