@@ -139,20 +139,30 @@ print(ssh_connection)
 #The function will find the largest number among any three numbers that are passed into the function. Declare a variable named large_num_result and print your results.
 
 def largest_num(num_1, num_2, num_3):
-   if (num_1 >= num_2) and (num_1 >= num_3):
+    if (num_1 >= num_2) and (num_1 >= num_3):
        return num_1
     elif(num_2>= num_1) and (num_2 >= num_3):
         return num_2
     else:
         return num_3
 
-#large_num_result = largest_num(1, 2, 3)
-#print(large_num_result)
+large_num_result = largest_num(1, 2, 3)
+print(large_num_result)
 
 #12 Function pos_neg
 #Create a function named pos_neg which takes a parameter num.
 
 #The function will print 'Positive Number' if the number passed in is positive, print 'Zero' if the number is 0 and print 'Negative Number' for a negative number.
+
+def pos_neg(num):
+    if (num > 0):
+        print 'positive number'
+    elif (num == 0):
+        print 'Zero'
+    else:
+        print 'Negative Number'
+pos_neg(0)
+
 
 #13 Function name_caps
 #Create a function named name_caps which takes a parameter name.
@@ -160,10 +170,19 @@ def largest_num(num_1, num_2, num_3):
 #The function will check the number of characters in the name that is passed into the function and do the following:
 
 #if characters in name <=5: capitalize the first letter in the name
-#if characters in name <=10: captialize all the letters in the name
+#if characters in name <=10: capitalize all the letters in the name
 #if characters in name >10: leave the letters as is
 
 #Print your results
+
+def name_caps(name):
+    if (len(name) <= 5):
+        print (name.title())
+    elif (len(name)<= 10):
+        print(name.upper()) 
+    else:
+        print(name)
+name_caps('Charlie')
 
 #14 Function leap_year
 
